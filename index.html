@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little Something for Deborah ❤️</title>
+
+<title>Happy Birthday Deborah ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -26,24 +27,22 @@ body {
 .container {
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 35px 18px;
+    padding: 45px 18px;
 }
 
 .card {
-    max-width: 650px;
+    max-width: 680px;
     width: 100%;
     text-align: center;
-    padding: 60px 35px;
-    background: rgba(255,255,255,0.82);
+    padding: 55px 35px;
+    background: rgba(255,255,255,0.85);
     border: 1px solid white;
     border-radius: 30px;
     box-shadow: 0 20px 70px rgba(150,70,90,0.12);
-    backdrop-filter: blur(15px);
-    animation: appear 1.2s ease;
     position: relative;
     z-index: 2;
+    animation: appear 1.2s ease;
 }
 
 .small-title {
@@ -70,7 +69,7 @@ h1 span {
 
 .heart {
     font-size: 42px;
-    margin: 25px 0;
+    margin: 22px 0;
     display: inline-block;
     animation: heartbeat 1.8s infinite;
 }
@@ -87,7 +86,7 @@ h1 span {
     width: 55px;
     height: 2px;
     background: #d99aa8;
-    margin: 25px auto;
+    margin: 30px auto;
 }
 
 .message {
@@ -96,6 +95,31 @@ h1 span {
     line-height: 1.9;
     color: #75505a;
     margin: 25px 0;
+}
+
+/* Deborah's photographs */
+
+.photo-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #a64f68;
+    margin-bottom: 12px;
+}
+
+.photo-caption {
+    font-size: 13px;
+    color: #967780;
+    margin-bottom: 25px;
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 0 auto 28px;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(150,70,90,0.12);
 }
 
 button {
@@ -141,7 +165,7 @@ button:hover {
     margin-top: 35px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 21px;
     color: #bd8190;
 }
 
@@ -185,7 +209,7 @@ footer {
 
 @media(max-width: 500px) {
     .card {
-        padding: 45px 22px;
+        padding: 42px 20px;
     }
 
     .message {
@@ -198,80 +222,108 @@ footer {
 <body>
 
 <div class="container">
-    <main class="card">
 
-        <div class="small-title">
-            A little something for you
-        </div>
+<main class="card">
 
-        <h1>
-            Happy Birthday
-            <span>Deborah ❤️</span>
-        </h1>
+    <div class="small-title">
+        A little something for you
+    </div>
 
-        <div class="heart">♡</div>
+    <h1>
+        Happy Birthday
+        <span>Deborah ❤️</span>
+    </h1>
 
-        <p class="intro">
-            We've never met in person, but that doesn't mean
-            I can't take a moment to make you feel special.
-            So here's a little something just for you.
-        </p>
+    <div class="heart">♡</div>
 
-        <div class="line"></div>
+    <p class="intro">
+        We've never met in person, but that doesn't mean
+        I can't take a moment to make you feel special.
+        So here's a little something just for you.
+    </p>
 
-        <p class="message">
-            Even though we haven't met in person, I'm glad
-            our paths crossed. I hope today reminds you
-            how special you are and how much happiness
-            you deserve.
+    <div class="line"></div>
+
+    <p class="message">
+        Even though we haven't met in person, I'm glad
+        our paths crossed. I hope today reminds you
+        how special you are and how much happiness
+        you deserve.
+        <br><br>
+
+        May this new chapter bring you beautiful
+        opportunities, genuine smiles, unexpected
+        blessings and countless reasons to be happy.
+        <br><br>
+
+        I hope life treats you kindly, your dreams
+        keep getting closer, and you never lose
+        the lovely person you are.
+    </p>
+
+    <div class="line"></div>
+
+    <!-- Deborah's original photographs -->
+
+    <h2 class="photo-heading">
+        A little appreciation for you ♡
+    </h2>
+
+    <p class="photo-caption">
+        Because today deserves a little extra celebration.
+    </p>
+
+    <img
+        class="photo"
+        src="IMG_6680.JPG"
+        alt="Deborah smiling in a white outfit"
+    >
+
+    <img
+        class="photo"
+        src="IMG_6681.JPG"
+        alt="Deborah in a white top and jeans"
+    >
+
+    <div class="line"></div>
+
+    <button onclick="revealMessage()" id="surpriseButton">
+        One more thing... ✨
+    </button>
+
+    <div class="hidden-message" id="hiddenMessage">
+        <p>
+            Here's to more conversations, more laughter
+            and hopefully, one day, finally meeting
+            in person.
             <br><br>
 
-            May this new chapter bring you beautiful
-            opportunities, genuine smiles, unexpected
-            blessings and countless reasons to be happy.
-            <br><br>
-
-            I hope life treats you kindly, your dreams
-            keep getting closer, and you never lose
-            the lovely person you are.
+            Until then, enjoy your day, Deborah.
+            You deserve nothing but good things.
+            ❤️
         </p>
+    </div>
 
-        <div class="line"></div>
+    <div class="signature">
+        With love, Fiyin ♡
+    </div>
 
-        <button onclick="revealMessage()" id="surpriseButton">
-            One more thing... ✨
-        </button>
+    <footer>
+        A LITTLE BIRTHDAY SURPRISE · JUST FOR DEBORAH
+    </footer>
 
-        <div class="hidden-message" id="hiddenMessage">
-            <p>
-                Here's to more conversations, more laughter
-                and hopefully, one day, finally meeting
-                in person.
-                <br><br>
-
-                Until then, enjoy your day, Deborah.
-                You deserve nothing but good things.
-                ❤️
-            </p>
-        </div>
-
-        <div class="signature">
-            With love, Fiyin ♡
-        </div>
-
-        <footer>
-            A LITTLE BIRTHDAY SURPRISE · JUST FOR DEBORAH
-        </footer>
-
-    </main>
+</main>
 </div>
 
 <script>
+
 function revealMessage() {
+
     const message = document.getElementById("hiddenMessage");
     const button = document.getElementById("surpriseButton");
 
     message.classList.add("show");
+
     button.textContent = "Sending you good wishes ❤️";
     button.disabled = true;
 
@@ -281,6 +333,7 @@ function revealMessage() {
 }
 
 function createHeart() {
+
     const heart = document.createElement("div");
 
     heart.className = "floating";
@@ -290,7 +343,9 @@ function createHeart() {
     ];
 
     heart.style.left = Math.random() * 100 + "vw";
-    heart.style.fontSize = (14 + Math.random() * 22) + "px";
+
+    heart.style.fontSize =
+        (14 + Math.random() * 22) + "px";
 
     heart.style.color = [
         "#d18a9b",
@@ -307,6 +362,7 @@ function createHeart() {
 }
 
 setInterval(createHeart, 1200);
+
 </script>
 
 </body>
